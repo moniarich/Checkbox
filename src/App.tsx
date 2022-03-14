@@ -56,6 +56,7 @@ function App() {
       <>
         <label className="text-sky-700 p-2 ml-4">
           <input
+            data-testid="checkbox-1"
             type="checkbox"
             disabled={isADisabled()}
             checked={a}
@@ -68,6 +69,7 @@ function App() {
       <>
         <label className="text-sky-700 p-2 ml-4">
           <input
+            data-testid="checkbox-2"
             type="checkbox"
             disabled={isBDisabled()}
             checked={b}
@@ -77,6 +79,7 @@ function App() {
         </label>
         <label className="text-sky-700 p-2 ml-4">
           <input
+            data-testid="checkbox-3"
             type="checkbox"
             disabled={isCDisabled()}
             checked={c}
