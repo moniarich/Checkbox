@@ -10,17 +10,14 @@ function App() {
   };
   const clickB = () => {
     setB(!b);
-
-    console.log("a,b,c", a, b, c);
   };
   const clickC = () => {
     setC(!c);
   };
   debugger;
   const isBDisabled = () => {
-   
-    if(a && !b&&!c){
-      return true
+    if (a && !b && !c) {
+      return true;
     }
     if (a && c && b) {
       return false;
@@ -29,26 +26,18 @@ function App() {
     if (a && !c) {
       return false;
     }
-    if(!a && b && c){
-      return false
-    }
-   
+
     return false;
   };
 
   const isCDisabled = () => {
-  
-    if(a && !b&&!c){
-      return true
+    if (a && !b && !c) {
+      return true;
     }
     if (a && c && b) {
       return false;
     }
 
-    if (a && !b && !c) {
-      return false;
-    }
-    
     return false;
   };
 
@@ -59,7 +48,6 @@ function App() {
     if (c && b) {
       return true;
     }
-    
 
     return false;
   };
